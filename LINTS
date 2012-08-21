@@ -1,0 +1,13 @@
+* Replace ... with \dots or \ldots
+
+* Replace \\ with \n\n
+
+* Replace double spaces with single space
+
+* Insert space after .,!?;:
+
+* Shorten lines to 79 characters
+
+* Replace "` with \glqq
+
+* Replace "' with \grqq
