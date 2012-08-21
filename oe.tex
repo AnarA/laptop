@@ -52,8 +52,23 @@
         Fachbereichs Mathematik\\[\bigskipamount]
         der Universität Hamburg}
 
+% Befehl: Jahr
+\newcommand\thisYear{2012}
+\newcommand\thisYearShort{12}
+\newcommand\nextYear{2013}
+\newcommand\nextYearShort{13}
+
 % Datum des Dokuments
-\date{Wintersemester 2011/2012}
+\date{Wintersemester \thisYear/\nextYear}
+
+% Datum, kurz.
+\newcommand\dateShort{WiSe \thisYearShort/\nextYearShort}
+
+% Veranstaltungsnummer der Orientierungseinheit in STiNE.
+%
+% TODO: Überprüfen.
+
+\newcommand\stineNo{65.001}
 
 % Kein Abstand vor und nach der multicols-Umgebung.
 \setlength{\multicolsep}{0pt}
@@ -240,11 +255,11 @@
 % Umgebung für die Tutoren-Tipps.
 %
 % Beispiel
-% \begin{advice}{NAME}
+% \begin{advice}
 % TEXT [TEXT,...]
 % \end{advice}
 
-\newenvironment{advice}[1]{\medskip{\bf TUTOREN-TIPP (#1)}.}{\medskip}
+\newenvironment{advice}{\medskip{\bf TUTOREN-TIPP}.}{\medskip}
 
 % Befehl: emphm
 %
@@ -364,6 +379,9 @@
     \end{picture}}
 
 % Befehl: important
+%
+% Setzt eine Grafik als Warnhinweis.
+
 \newcommand{\important}{%
     \begin{picture}(6,5.196)(0,1)
     \thicklines
@@ -371,6 +389,10 @@
     \put(2.25,.5){{\bf !}}
     \end{picture}
     \hskip .25em}
+
+% Umgebung: borderless
+%
+% Erzeugt eine Seite ohne Dekoration. Siehe zB. Tastatur-Layout.
 
 \newenvironment{borderless}{%
     \clearpage%
@@ -437,9 +459,9 @@
 
 \section{Eure Professoren stellen sich vor}
 \begin{multicols}{2}
-\include{./vorstellung/schacht}
-\include{./vorstellung/koch}
-% TODO: Latschev-Text
+% TODO: Einfügen
+%\include{./vorstellung/schacht}
+%\include{./vorstellung/koch}
 %\include{./vorstellung/latschev}
 \end{multicols}
 

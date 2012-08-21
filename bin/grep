@@ -1,0 +1,4 @@
+#! /bin/zsh
+
+find . -name "*.tex" -exec grep -H "$@" '{}' \;
+
